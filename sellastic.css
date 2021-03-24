@@ -170,6 +170,7 @@ ul{
   .featuring{border: 4px solid #198754;}
   .category{margin-left: 0px}
 
-  .fa-2x{width: 5px}
-  .space{margin-left: 5px;}
+  .space{margin-left: 15px;margin-top: 10px;}
+  figcaption{margin-bottom: 5px}
+  .btm-menu a:active{color: #198754}
 }
