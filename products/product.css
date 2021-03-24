@@ -67,9 +67,9 @@
 }
 @media screen and (max-width: 770px) {
 	
-	.showdiv{height: 85%;margin-bottom: 30px;margin-left:-5px;}
+	.showdiv{height: 90%;margin-bottom: 30px;margin-left:-5px;}
 	.showdiv img{width: 260px}
-	.sm-div{margin-left: -10px;height: 250px;overflow-y: auto;}
+	.sm-div{margin-left: -10px;height: 270px;overflow-y: auto;}
 	/* Hide scrollbar for Chrome, Safari and Opera */
 .sm-div::-webkit-scrollbar {
     display: none;
