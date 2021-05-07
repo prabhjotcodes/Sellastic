@@ -1,0 +1,12 @@
+#heading{font-size: 3.6rem;font-weight: bold;}
+table{margin:10%;margin-top: 10%}
+#taken{width: 80%;margin-left: 5%}
+
+@media screen and (max-width: 770px) {
+	#heading{font-size: 3.2rem}
+	h5{font-size: 15px;background-color: #ffffffad}
+	#taken{display: none}
+	article{background-image: url("img/taken-sm.svg");background-size: cover;
+	background-repeat: no-repeat;background-size: 100% 100%;}
+
+	}
