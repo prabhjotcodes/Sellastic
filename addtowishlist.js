@@ -297,8 +297,8 @@ function displayWishes() {
 						</tr>
 						<tr id="re${item.tag}">
 							<td colspan="2" class="text-center" >
-									<span class="bigBtn"><button value="${item.tag}"  style="font-size: 30px;width: 350px;" class="btn btn-outline-success mx-3 add-item add-cart"><i style="font-size:40px;" class="fad fa-cart-plus removeicon"></i>Add To Cart</button></span>
-									<span class="bigBtn"><button  value="${item.tag}" onclick=removewish(this.value) style="font-size: 30px;width: 350px;" class="btn btn-outline-danger mx-3"><i style="font-size:40px;" class="fad fa-times-circle removeicon"></i>Remove Product</button></span>
+									<span ><button value="${item.tag}"  style="font-size: 30px;width: 350px;" class="btn btn-outline-success mx-3 add-item add-cart"><i style="font-size:40px;" class="fad fa-cart-plus removeicon"></i>Add To Cart</button></span>
+									<span ><button  value="${item.tag}" onclick=removewish(this.value) style="font-size: 30px;width: 350px;" class="btn btn-outline-danger mx-3"><i style="font-size:40px;" class="fad fa-times-circle removeicon"></i>Remove Product</button></span>
 								</div>
 							</td>
 						</tr>
