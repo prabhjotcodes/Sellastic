@@ -15,6 +15,9 @@
   display: none;
   cursor: none;
 }
+.swal-overlay {
+  background-color: #198754;
+}
 
 .price{margin-top: 5px}
 .pricea{font-size: 30px;}

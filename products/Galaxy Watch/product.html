@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./product.css">
 	<link rel="stylesheet" type="text/css" href="../../sellastic.css">
+	<link rel="stylesheet" href="../../wishlist/wishlist.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
 	<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
@@ -15,6 +16,36 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script type="text/javascript" src="../../font-awesome.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+	  $('#searchbox').keyup(function(){
+			 
+		   // Search text
+		   var text = $(this).val().toLowerCase();
+			 
+		   // Hide all content class element
+		   $('.contentsearch').hide();
+		   $('#searchbox').css('margin-top','-2px');
+
+		   // Search 
+		   $('.contentsearch .title').each(function(){
+		 
+			if($(this).text().toLowerCase().indexOf(""+text+"") != -1 ){
+			 $(this).closest('.contentsearch').show();
+
+			}
+			if(text.length<2){
+				 $('.contentsearch').css('display','none');
+			 }
+			 if(text.length==0){
+				 $('.contentsearch').css('display','none');
+			 }
+
+		  });
+		 });
+		});
+	</script>
 	
 </head>
 <body>
@@ -38,19 +69,67 @@
 			        </li>
 			    </ul>
 			    <ul class="navbar-nav search">
-			        <li class="nav-item s1">
-			          		<form class="d-flex">
-								<input id="search" type="text" class="form-control me-2" placeholder="I'm shopping for..." aria-label="Search">
-			        			<a href="#"><button id="search-btn" class="btn btn-outline-success" type="submit">Search</button></a>
-			        		</form>
-			        </li>
-			    </ul>
+					<li class="nav-item s1">
+							  <form class="d-flex">
+								
+								<div class="holder search" id="search">
+									<input  type="text" class="form-control me-2" placeholder="I'm shopping for..." aria-label="Search" autocomplete="off" id="searchbox">
+								</div>
+								
+								<button id="search-btn" class="btn btn-outline-success" type="button">Search</button>
+							</form>
+					</li>
+				</ul>
+				 <div class="dropdown">
+					<a href="../../products/BoAt Stone/product.html">
+						<div class="contentsearch">
+						<img class="dropdown-img inline" src="../../products/BoAt Stone/img/product1.jpeg">
+						<h6 class="inline title">BoAt Stone 190F 5 W Bluetooth Speaker</h6>
+					</div>
+					</a>
+
+					<a href="../../products/POCO C3/product.html">
+						<div class="contentsearch">
+						<img class="dropdown-img inline" src="../../products/POCO C3/img/POCO C3-1.jpeg">
+						<h6 class="inline title">POCO C3 (Matte Black, 32 GB) (3 GB RAM)</h6>
+					</div>
+					</a>
+
+					<a href="../../products/acer Aspire 7/product.html">
+						<div class="contentsearch">
+						<img class="dropdown-img inline" src="../../products/acer Aspire 7/img/product1.png">
+						<h6 class="inline title">acer Aspire 7 Ryzen 5 Hexa Core 5500U</h6>
+					</div>
+					</a>
+
+					<a href="../../products/OPPO Enco X/product.html">
+						<div class="contentsearch">
+						<img class="dropdown-img inline" src="../../products/OPPO Enco X/img/product1.jpeg">
+						<h6 class="inline title">OPPO Enco X Bluetooth Headset</h6>
+					</div>
+					</a>
+
+					<a href="../../products/Galaxy Watch/product.html">
+						<div class="contentsearch">
+						<img class="dropdown-img inline" src="../../products/Galaxy Watch/img/product1.png">
+						<h6 class="inline title">SAMSUNG Galaxy Watch 46 mm Smartwatch</h6>
+					</div>
+					</a>
+				</div>
+				<script type="text/javascript">
+					var inputs = document.querySelectorAll('input');
+					for (var i = 0; i < inputs.length; i++) {
+						inputs[i].addEventListener('focus', function(){
+							this.parentNode.appendChild(document.querySelector('.dropdown'));
+						});
+					}
+				</script>
 			    <ul class=" navbar-nav">
 			        <li class="nav-item">
-			          <a href="#"><i class="far fa-heart fa-2x side-icon"></i></a>
+			          <a href="../../wishlist/wishlist.html"><i class="far fa-heart fa-2x side-icon"></i></a><span  id="wishcount" class="wishCount">0</span>
 			        </li>
 			        <li class="nav-item">
-			          <span id="hidecart"><a href="#"><i class="fas fa-cart-arrow-down fa-2x side-icon"></i></a><span id="cartCount">0</span></span>
+			          <span id="hidecart"><a href="../../cart/cart.html"><i class="fas fa-cart-arrow-down fa-2x side-icon"></i></a><span id="cartCount">0</span></span>
 			        </li>
 			        <li class="nav-item">
 			          <a href="../../signinpages/signin.html"><i class="far fa-user fa-2x side-icon"></i></a>
@@ -73,7 +152,7 @@
 			  <div class="row row-div">
 			    <div class="col-3 sm-div">
 			    	
-			    	<div class="product-sm"><img src="img/product1.png">
+			    	<div class="product-sm"><img src="../../products/Galaxy Watch/img/product1.png">
 			    	</div>
 			    	<div class="product-sm"><img src="img/product2.png">
 			    	</div>
@@ -112,10 +191,17 @@
 					<div class="tab-content scroll" id="pills-tabContent">
 					  <div class="tab-pane fade show active" id="pills-overview" role="tabpanel" aria-labelledby="pills-overview-tab">
 					  	<h4 id="product-name">SAMSUNG Galaxy Watch 46 mm Smartwatch  (Black Strap, Regular)</h4>
-					  	<span class="block"><i class="fad fa-star"></i>4.5 (11,721 Ratings)</span>
+					  	<span id="rating" class="block"><i class="fad fa-star"></i>4.5 (11,721 Ratings)</span>
 				        	<p class="price">
 				        		<span id="pricea" class="pricea">₹16,990</span><span id="priceb" class="priceb">₹33,999</span><span id="pricec" class="pricec">50% off</span>
 				        	</p>
+							<button class="btn side-wish mx-3 ">
+								<div class="heart-btn">
+									<div class="content">
+									  <span class="heart"></span>
+									</div>
+								  </div>
+							</button>
 				        	<h4>Sold Out</h4>
 				        	<p style="color: red;">This item is currently out of stock</p>
 
@@ -922,5 +1008,6 @@
 
 		</script>
 		<script src="../../addtocart.js"></script>
+		<script src="../../addtowishlist.js"></script>
 </body>
 </html>

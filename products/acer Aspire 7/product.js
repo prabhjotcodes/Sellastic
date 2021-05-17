@@ -1,14 +1,16 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("nav").style.height = "80px";
-	document.getElementById("cartCount").style.top="0.6rem";
-  } else {
-    document.getElementById("nav").style.height = "120px";
-	document.getElementById("cartCount").style.top="1.6rem";
+	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+	  document.getElementById("nav").style.height = "80px";
+	  document.getElementById("cartCount").style.top="0.9rem";
+	  document.querySelector(".wishCount").style.top="0.9rem";
+	} else {
+	  document.getElementById("nav").style.height = "120px";
+	  document.getElementById("cartCount").style.top="1.9rem";
+	  document.querySelector(".wishCount").style.top="1.9rem";
+	}
   }
-}
 
 function checkavailability(){
 	var arr = [147001,147111,147203,140406,143001,140118];
