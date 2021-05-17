@@ -1,0 +1,222 @@
+.head-title {
+    /* font-family: "Trebuchet MS", sans-serif; */
+    font-family: 'Merienda', cursive;
+    width: 70%;
+    margin: 0 15% 3% 15%;
+    font-size: 5em;
+    font-weight: 700;
+    color: #198754;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #198754;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+}
+.cost-title {
+    font-family: 'Merienda', cursive;
+    width: 100%;
+    /* margin: 0 15% 3% 15%; */
+    font-size: 5em;
+    font-weight: 700;
+    color: #198754;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #198754;
+    text-transform: uppercase;
+    /* align-items: center;
+    justify-content: center; */
+}
+.products-container {
+    width: 100%;
+    /* margin:0 auto;
+    margin-top:50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px; */
+}
+
+.product-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgreen;
+    margin: 0 auto;
+}
+
+.product-title {
+    font-size: 3ch;
+}
+
+.detail-title {
+    font-size: 3ch;
+}
+
+.product-detail {
+    width: 45%;
+    padding-left: 15%;
+    line-break: strict;
+    justify-items: center;
+}
+
+.item-name {
+    width: 65%;
+    line-break: normal;
+    justify-self: center;
+}
+
+
+
+.quantity-title {
+    font-size: 3ch;
+}
+
+.quantity {
+    width: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.total-title {
+    font-size: 3ch;
+}
+
+.total {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.size {
+    font-size: 3ch;
+}
+
+.mytable>tbody>tr>td,
+.mytable>tbody>tr>th,
+.mytable>tfoot>tr>td,
+.mytable>tfoot>tr>th,
+.mytable>thead>tr>td,
+.mytable>thead>tr>th {
+    padding: 1rem 0.5rem;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.com {
+    border-bottom: 2px solid lightgreen;
+}
+
+table {
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+.product-title-image {
+    width: 15%;
+}
+
+.cart-image {
+    height: 15em;
+    width: 15em;
+}
+
+.removebutton {
+    /* margin-left: 8%;
+    margin-top: 5%; */
+    width: 12%;
+}
+
+#removebutton button {
+    font-size: 27px;
+    margin-left: 10px;
+}
+
+#heading {
+    margin-left: 15%;
+    padding-left: 12%;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+#heading-text {
+    margin-left: 23%;
+    padding-left: 12%;
+}
+
+#heading-button {
+    margin-left: 30%;
+}
+
+.removeicon {
+    padding-top: 4px;
+}
+
+#heading-button button {
+    height: 50px;
+    width: 400px;
+    font-size: 1.5em;
+}
+
+.emptycart {
+    height: 12em;
+    width: 12em;
+}
+.checkout{
+    height: 70px;
+    width: 100%;
+    margin-top: 60px;
+}
+.checkout button{
+    font-size: 40px;
+    height: 70px;
+    width: 100%;
+    margin-top: 60px;
+}
+/* 
+.set-quantity {
+    position: relative;
+}
+
+.set-quantity::after {
+    content: "Note 1 piece";
+    text-align: center;
+    text-align: center;
+    position: absolute;
+    bottom: -40px;
+    right: 1.15rem;
+    font-size: 0.9rem;
+}
+
+@media screen  and (max-width:1080px){
+    .set-quantity{
+        display: inline-flex;
+        text-align: center;
+    }
+    .set-quantity::after{
+        text-align: center;
+        text-align: center;
+        position: absolute;
+        bottom: -30px;
+        right: 0.14rem;
+        font-size: 1rem;
+    }
+} */
+
+@media screen  and (max-width:700px){
+    .cost-title{
+        text-align: center;
+        justify-content: center;
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .cost-title{
+        font-size: 2em;
+    }
+    
+}

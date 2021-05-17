@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="icon" href="../favicon.ico">
+	    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+	    
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
+	    
+	    
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+	   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	    <script type="text/javascript" src="../font-awesome.js"></script>
+	    <link rel="stylesheet" type="text/css" href="checkout.css">
+        
+</head>
+<body>
+    <div align="center"><h1>Checkout</h1></div>
+    <a href="../index.html"><span style="float: right;margin: 2%">Cancel and return to website</span></a>
+	<div class="container-fluid" id="main">
+        <div style="margin: 2%;padding: 2%" class="container-fluid">
+            <h5 style="display: inline;"><span class="fa fa-check-square-o"></span><b>ELIGIBLE</b> | </h5><span>Pay</span>
+
+            <form>
+            <div class="row">
+                <div class="col-sm-7">
+                    <h4>Billing Details</h4>
+                    <div id="details" style="margin-top: 5%;">
+                        <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="text" id="email" name="email" placeholder="john@example.com">
+                        <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                        <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                        <label for="city"><i class="fa fa-institution"></i> City</label>
+                        <input type="text" id="city" name="city" placeholder="New York">
+
+                         <div class="row">
+                          <div class="col-sm">
+                            <label for="state">State</label>
+                            <input type="text" id="state" name="state" placeholder="NY">
+                          </div>
+                          <div class="col-sm">
+                            <label for="zip">Zip</label>
+                            <input type="text" id="zip" name="zip" placeholder="10001">
+                          </div>
+                        </div>
+                    </div>
+
+                    <div id="payment">
+                         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-credit-card mr-2"></i> Credit Card</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fab fa-paypal mr-2"></i> Paypal</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fas fa-mobile-alt mr-2"></i> Net Banking</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <form role="form">
+                                <div class="form-group"> <label for="username">
+                                        <h6>Card Owner</h6>
+                                    </label> <input type="text" name="username" placeholder="Card Owner Name" required class="form-control "> </div>
+                                <div class="form-group"> <label for="cardNumber">
+                                        <h6>Card number</h6>
+                                    </label>
+                                    <div class="input-group"> <input type="text" name="cardNumber" placeholder="Valid card number" class="form-control " required>
+                                        <div  class="input-group-append"> <span style="height: 50px" class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="form-group"> <label><span class="hidden-xs">
+                                                    <h6>Expiration Date</h6>
+                                                </span></label>
+                                            <div class="input-group"> <input type="number" placeholder="MM" name="" class="form-control" required> <input type="number" placeholder="YY" name="" class="form-control" required> </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group mb-4"> <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
+                                                <h6>CVV <i class="fa fa-question-circle d-inline"></i></h6>
+                                            </label> <input type="text" required class="form-control"> </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer"> <button type="button" class="btn btn-success btn-block shadow-sm"> Confirm Payment </button></div>
+                            </form>
+                      </div>
+
+                      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                        <h6 class="pb-2">Select your paypal account type</h6>
+                        <div class="form-group "> <label class="radio-inline"> <input type="radio" name="optradio" checked> Domestic </label> <label class="radio-inline"> <input type="radio" name="optradio" class="ml-5">International </label></div>
+                        <p> <a href="https://paypal.com"><button type="button" class="btn btn-success "><i class="fab fa-paypal mr-2"></i> Log into my Paypal</button></a> </p>
+                        <p class="text-muted"> Note: After clicking on the button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website to view details of your order. </p>
+                    
+
+                      </div>
+                      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="form-group "> <label for="Select Your Bank">
+                                <h6>Select your Bank</h6>
+                            </label> <select class="form-control" id="ccmonth">
+                                <option value="" selected disabled>--Please select your Bank--</option>
+                                <option>Bank 1</option>
+                                <option>Bank 2</option>
+                                <option>Bank 3</option>
+                                <option>Bank 4</option>
+                                <option>Bank 5</option>
+                                <option>Bank 6</option>
+                                <option>Bank 7</option>
+                                <option>Bank 8</option>
+                                <option>Bank 9</option>
+                                <option>Bank 10</option>
+                            </select> </div>
+                        <div class="form-group">
+                            <p> <button type="button" class="btn btn-success "><i class="fas fa-mobile-alt mr-2"></i> Proceed Payment</button> </p>
+                        </div>
+                        <p class="text-muted">Note: After clicking on the button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website to view details of your order. </p>
+                    
+
+                      </div>
+                    </div>
+
+                    </div>
+                       
+                </div>
+                <div id="recap" class="col-sm ">
+                    <h4 style="margin:20px">Order Summary</h4>
+                    <div class="overflow-auto scroll">
+                    <table cellpadding="10">
+                        <tbody class="displayProduct">
+                       
+                        </tbody>
+                        <tbody>
+                        <!-- <tr>
+                            <td>Discount</td>
+                            <td class="recap-item">-₹20</td>
+                        </tr> -->
+                        <tr>
+                            <td>Delivery Charges</td>
+                            <td class="recap-item">₹35</td>
+                        </tr>
+                        </tbody>
+                        <tbody class="displaycost">
+                        <tr style="border-bottom: 1px solid #ccc">
+                            <th>Total</th>
+                            <td style="color: rgb(15, 207, 143);font-weight: 680" class="recap-item">$265</td>
+                        </tr>
+                        </tbody>
+                        <tr>
+                            <th>Coupons <i class="fa fa-question-circle d-inline"></i></th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="coupons"></td>
+                        </tr>
+                    </table>
+                    </div>
+
+                    <button onclick="pay()" id="btn-details" class="btn btn-success">Proceed To Payment</button>
+                    
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+
+    <script type="text/javascript" src="checkout.js"></script>
+</body>
+</html>
