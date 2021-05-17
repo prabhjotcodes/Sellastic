@@ -18,13 +18,13 @@
             <h2 class="title">Log in</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" required>
+              <input type="text" placeholder="Username" id="login-username" required>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" required>
+              <input type="password" placeholder="Password" id="login-password" required>
             </div>
-            <input type="submit" value="Login" class="btn solid">
+            <input type="submit" value="Login" onclick="logincheck()" class="btn solid">
             <p class="social-text">Or Log in with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -45,21 +45,25 @@
             <h2 class="title">Register</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" required>
+              <input type="text" placeholder="Username" id="register-username" required>
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" required>
+              <input type="email" placeholder="Email" id="register-email" required>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" required>
+              <input type="password" placeholder="Password" id="register-password" required>
             </div>
             <div class="input-field">
-              <i class="fas fa-address-card"></i>
-              <input type="text" placeholder="Address" required>
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Confirm Password" id="register-Cpassword" required>
             </div>
-            <input type="submit" class="btn" value="Register" >
+            <!-- <div class="input-field">
+              <i class="fas fa-address-card"></i>
+              <input type="text" placeholder="Address" id="register-address" required>
+            </div> -->
+            <input type="submit" class="btn" onclick="registercheck()" value="Register" >
             <p class="social-text">Or Register with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -81,6 +85,7 @@
 
       <div class="panels-container">
         <div class="panel left-panel">
+          <div class="content content-left"><a href="../index.html"><button class="home-left">HOME</button></a></div>
           <div class="content">
             <h3>New here ?</h3>
             <p>
@@ -93,6 +98,7 @@
           <img src="img/log-3.svg" class="image" alt="" />
         </div>
         <div class="panel right-panel">
+          <div class="content content-right"><a href="../index.html"><button href="./index.html" class="home-right">HOME</button></a></div>
           <div class="content">
             <h3>One of us ?</h3>
             <p>

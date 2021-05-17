@@ -5,7 +5,8 @@ margin-top:0;}
 #logo{height:85px;margin-left: 5px;margin-bottom: 10px}
 #logo-sm{width: 80px;display: none;margin-bottom: 12px;margin-left: -10px}
 #select{width: 150px;margin-top: 26px;margin-left: 50px}
-#search{margin-left: 5px;margin-bottom: 5px;background:white}
+#search{margin-left: 5px;margin-right: 5px;margin-bottom: 5px;background:white;
+  border-radius: 15px}
 .search{width: 80%;}
 .s1{width: 100%}
 #search-btn{height: 38px;}
@@ -19,6 +20,25 @@ margin-top:0;}
 .bottom-menu i{color: black}
 .bottom-menu ul{width: 100%;}
 .bottom-menu figcaption{padding-left: 10px}
+
+.contentsearch{display: none;margin: 10px;border-bottom: 1px solid #ccc}
+
+.holder {
+    position: relative;
+}
+.dropdown {
+  margin-top: 3px;
+  margin-bottom: -502px;
+    position: absolute;
+    border: 0px solid black;
+    z-index: 1;
+    background: white;
+
+}
+
+.dropdown-img{width: 80px;height: 80px;margin: 10px}
+.dropdown a{text-decoration: none}
+.dropdown a:visited{color: black}
 
 
 #nav2-panel{position:fixed;top:0;left:0;width: 0%;height: 100%;
@@ -79,12 +99,70 @@ article{margin: 170px 3%;}
   display: flex;
   text-align: center;
   justify-content: center;
+  top: 1.9rem;
+  margin:0 25px;
+  text-align-last: justify;
+  transition: all ease;
+  
+
+};
+.wishCount{
+  user-select: none;position: absolute;
+  height:1.5em ;
+  width: 1.5em;
+  background-color:white;
+  color: #198754;
+  border-radius: 50%;
+  font: 1em sans-serif bolder;
+  display: flex;
+  text-align: center;
+  justify-content: center;
   top: 1.8rem;
   margin:0 25px;
   text-align-last: justify;
   
 
 };
+.wishUnwish{
+  color: #e72f4e;
+  
+}
+.wishicon{
+  height: 1.5em;
+  width: 1.5em;
+  /* padding-top: 2px;
+  padding-right: 1.9px; */
+}
+
+ .go-corner {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  /* top: 12px;
+  left: 5px; */
+  /* background-color:#f8f8f8; */
+  border-radius: 50%;
+
+}
+/*
+.go-arrow {
+  transform: skew(-6deg);
+    margin-left: -2px;
+    margin-top: 9px;
+    opacity: 0;
+} */
+
+.base{
+  min-height: 100vh;
+}
+.sticky-footer{
+  position:sticky;
+  top: 25%;
+}
+
 
 /*---------FOOTER--------*/
 
@@ -214,3 +292,4 @@ ul{
   figcaption{margin-bottom: 5px}
   .btm-menu a:active{color: #198754}
 }
+

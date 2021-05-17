@@ -3,10 +3,12 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("nav").style.height = "80px";
-	document.getElementById("cartCount").style.top="0.6rem";
+	document.getElementById("cartCount").style.top="0.9rem";
+	document.querySelector(".wishCount").style.top="0.9rem";
   } else {
     document.getElementById("nav").style.height = "120px";
-	document.getElementById("cartCount").style.top="1.6rem";
+	document.getElementById("cartCount").style.top="1.9rem";
+	document.querySelector(".wishCount").style.top="1.9rem";
   }
 }
 
@@ -58,6 +60,22 @@ function exit(){
 	
 
 }
+
+
+// let card=document.querySelectorAll('.card');
+// let wish=document.querySelector('.go-corner .btn');
+
+// alert(typeof(wish));
+// if(wish){
+// 	for (let i = 0; i < card.length; i++) {
+// 		card[i].addEventListener('mouseover',(e)=>{
+// 			const ele=card[i]
+// 			alert(ele);
+// 		});
+		
+		
+// 	}
+// }
 
 
 

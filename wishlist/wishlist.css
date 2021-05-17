@@ -1,0 +1,400 @@
+.head-title {
+    /* font-family: "Trebuchet MS", sans-serif; */
+    font-family: 'Merienda', cursive;
+    width: 80%;
+    margin: 0 15% 1% 12%;
+    font-size: 80px;
+    font-weight:700;
+    color: #198754;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #198754;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+}
+
+.wishCount{
+    user-select: none;
+    position: absolute;
+    height:1.5em ;
+    width: 1.5em;
+    background-color:white;
+    color: #198754;
+    border-radius: 50%;
+    font: 1em sans-serif bolder;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    top: 1.9rem;
+    margin:0 58px;
+    text-align-last: justify;
+    
+  
+  };
+
+.products-container{
+    width: 100%;
+}
+.product-header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgreen;
+    margin:0 auto;
+}
+.product-title{
+    font-size:3ch;
+}
+.detail-title{
+    font-size: 3ch;
+}
+.product-detail{
+    width: 45%;
+    padding-left:15%;
+    line-break: strict;
+    justify-items:center;
+}
+.item-name{
+    width: 65%;
+    line-break: normal;
+    justify-self: center;
+}
+.quantity-title{
+    font-size: 3ch;
+}
+.quantity{
+    width:5%;
+    display: flex;
+    align-items: center;
+}
+.margin{
+  padding-left: 15%;
+}
+
+.size{
+    font-size: 3ch;
+}
+.mytable>tbody>tr>td, .mytable>tbody>tr>th, .mytable>tfoot>tr>td, .mytable>tfoot>tr>th, .mytable>thead>tr>td, .mytable>thead>tr>th {
+    padding: 1rem 0.5rem;
+}
+.products{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+.com{
+    border-bottom:2px solid lightgreen ;
+}
+table {
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+  }
+
+.product-title-image{
+    width: 15%;
+}
+
+.cart-image{
+    height: 15em;
+    width: 15em;
+}
+.removebutton{
+    /* margin-left: 8%;
+    margin-top: 5%; */
+    font-size: 27px;
+    width: 350px;
+}
+
+.removebutton button {
+    font-size: 27px;
+    margin-left: 10px;
+}
+#heading{margin-left:5%;padding-left:12%;font-size: 6rem;font-weight: bold;transition: all 0.5s;}
+#heading-text{margin-left: 7%;padding-left: 12%;font-size: 2rem;transition: all 0.5s;}
+#heading-button{
+    margin-left: 30%;
+    transition: all 0.5s;
+}
+.removeicon{
+    padding-top:4px;
+}
+#heading-button button{
+    height: 50px;
+    width: 400px;
+    font-size: 1.5em;
+}
+
+#emptycart{
+    height: 500px;
+    width: 500px;
+    margin-top: -20px;
+}
+
+/* hearty     */
+
+
+.side-wish {
+  user-select: none;
+    position:static;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    top: 43.5%;
+    left: 60%;
+  }
+/* .side-wish{
+    
+} */
+.heart-btn{
+    position:relative;
+    margin: 0 12px;
+  }
+  .heart-content{
+    padding: 13px 16px;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .content.heart-active{
+    border-color: #f9b9c4;
+    background: #fbd0d8;
+  }
+  .heart{
+    position: absolute;
+    background: url("../img/img.png") no-repeat;
+    background-position: left;
+    background-size: 2900%;
+    height: 100px;
+    width: 100px;
+    top: 0%;
+    left: 0%;
+    padding: 18px 0 0 0;
+    transform: translate(-50%,-50%);
+  }
+  .heart.heart-active{
+    animation: animate .8s steps(28) 1;
+    background-position: right;
+  }
+  .bigBtn{
+    display: inline-flex;
+  }
+  .smlBtn{  
+    display: none;
+
+  }
+  @keyframes animate {
+    0%{
+      background-position: left;
+    }
+    100%{
+      background-position: right;
+    }
+  }
+
+
+
+/* Responsiveness */
+@media screen and (max-width: 1485px) {
+  .head-title{
+    font-size:60px;
+    /* width: 90%;
+    margin: 0 8% 1% 3%; */
+  }
+  #heading{
+    font-size: 4.5rem;
+  }
+  #heading-text{
+    font-size: 1.5rem;
+    margin-left: 18%;
+  }
+
+  
+}
+@media screen  and (max-width:1000px){
+  .head-title{
+    font-size:50px;
+  }
+  #heading{
+    font-size: 2.5rem;
+    margin-left: 12%;
+  }
+  #heading-text{
+    font-size: 1.3rem;
+    margin-left: 11%;
+  }
+  #emptycart{
+    height: 400px;
+    width: 400px;
+  }
+  #heading-button{
+    margin-left: 18%;
+  }
+  #heading-button button{
+      height: 44px;
+      width: 300px;
+      font-size: 1.3em;
+  }
+  .wishtable{
+    width:500px;
+  }
+  .smlBtn{display: inline-flex;}
+  .bigBtn{display: none;}
+}
+@media screen and (max-width : 970px){
+  .head-title{
+    font-size:45px;
+  }
+
+}
+@media screen and (max-width: 770px) {
+  #wishcount{
+    right: 10.5% !important;
+    margin: 0 !important;
+  }
+  .side-wish {
+    top: 75.2%;
+    left: 77%;
+  }
+  .head-title{
+    font-size:38px;
+    width: 95%;
+    margin: 0 7% 1% 3%;
+  }
+  
+  #emptycart{
+    height: 320px;
+    width: 320px;
+  }
+  #heading-button{
+    margin-left: 12%;
+  }
+  #heading-button button{
+      height: 44px;
+      width: 300px;
+      font-size: 1.4em;
+  }
+  .wish{
+    width: 800px;
+  }
+  .product-title{
+    font-size: 3ch;
+      width:15%;  
+  }
+  .detail-title{
+      font-size: 3ch;
+  }
+  .product-detail{
+      width: 45%;
+      padding-left:15%;
+      line-break: strict;
+      justify-items:center;
+  }
+  .item-name{
+      width: 65%;
+      line-break: normal;
+      justify-self: center;
+  }
+
+
+
+  .quantity-title{
+      font-size: 3ch;
+  }
+  
+}
+@media screen and (max-width: 560px) {
+  #wishcount{
+    right: 14% !important;
+    margin: 0 !important;
+
+  }
+  .side-wish {
+    top: 75.2%;
+    left: 77%;
+  }
+  .head-title{
+    font-size:32px;
+    width: 95%;
+    margin: 0 7% 1% 3%;
+  }
+  #heading{
+    font-size: 2.5rem;
+    margin-top: 2%;
+    margin-left: 2.2%;
+  }
+  #heading-text{
+    font-size: 1.3rem;
+    margin-top: 2%;
+    margin-left: 1%;
+  }
+  
+  #emptycart{
+    display: none;
+  }
+  #heading-button{
+    margin-left: 20%;
+  }
+  #heading-button{
+    justify-content: center;
+  }
+  #heading-button button{
+      height: 44px;
+      width: 300px;
+      font-size: 1.4em;
+  }
+  
+}
+@media screen and (max-width: 440px) {
+  #wishcount{
+    right: 18% !important;
+    margin: 0 !important;
+
+  }
+  .side-wish {
+    top: 75.2%;
+    left: 77%;
+  }
+  .head-title{
+    font-size:24px;
+    width: 98%;
+    margin: 0 2% 1% 2%;
+  }
+  #heading{
+    font-size: 2rem;
+    margin-top: 2%;
+    margin-left: 2%;
+  }
+  #heading-text{
+    font-size: 1rem;
+    margin-top: 2%;
+    margin-left: -1%;
+  }
+  #heading-button{
+    margin-left: 9%;
+  }
+  #heading-button{
+    justify-content: center;
+  }
+  #heading-button button{
+      height: 44px;
+      width: 300px;
+      font-size: 1.4em;
+  }
+  
+}
+@media screen and (max-width: 390px) {
+  #wishcount{
+    right: 21.5% !important;
+    margin: 0 !important;
+
+  }
+  .side-wish {
+    top: 75.2%;
+    left: 77%;
+  }
+  
+}
